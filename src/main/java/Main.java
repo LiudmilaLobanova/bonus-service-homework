@@ -5,7 +5,10 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    long expected = 150;
+    long actual = service.calculate(amount, registered);
+    System.out.println("1." + expected + " == ? == " + actual);
+
   }
 }
 
